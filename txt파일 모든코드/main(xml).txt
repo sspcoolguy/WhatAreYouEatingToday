@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+
+    android:orientation="vertical"
+    tools:context="sspcoolgay.project.com.mylinearlayoutex.MyLinearLayoutEx">
+
+    <ListView
+        android:id="@+id/lstvw1"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="23dp" />
+
+    <EditText
+        android:id="@+id/etxt1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lstvw1"
+        android:layout_alignStart="@+id/lstvw1"
+        android:layout_below="@+id/lstvw1"
+        android:layout_marginTop="23dp"
+        android:hint="메뉴입력" />
+
+    <TextView
+        android:id="@+id/txtvw1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_above="@+id/etxt1"
+        android:layout_toEndOf="@+id/etxt1"
+        android:layout_toRightOf="@+id/etxt1"
+        android:gravity="center"
+        android:textColor="#00c4ff"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/etxt1"
+        android:layout_alignStart="@+id/etxt1"
+        android:layout_below="@+id/etxt1"
+        android:text="메뉴등록" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etxt1"
+        android:layout_alignRight="@+id/etxt1"
+        android:layout_below="@+id/etxt1"
+        android:text="메뉴삭제" />
+
+    <Button
+        android:id="@+id/resultButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etxt1"
+        android:layout_alignBottom="@+id/etxt1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/etxt1"
+        android:layout_toRightOf="@+id/etxt1"
+        android:text="뭐먹을지 추출" />
+
+</RelativeLayout>
